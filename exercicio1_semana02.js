@@ -24,7 +24,7 @@ escreva("Mês de nascimento: Fevereiro");
 pulaLinha();
 escreva("Ano de nascimento:2006");
 pulaLinha();
-escreva("Faixa Etária:" + calculoIdade(Rosangela) + mensagem);
+escreva("Faixa Etária:" + calculoIdade(Rosangela));
 escreva("<hr>");
 
 var Thiago = (anoAtual - 2000);
@@ -36,7 +36,7 @@ escreva("Mês de nascimento: Maio");
 pulaLinha();
 escreva("Ano de nascimento:2000");
 pulaLinha();
-escreva("Faixa Etária:" + calculoIdade(Thiago) + mensagem);
+escreva("Faixa Etária:" + calculoIdade(Thiago));
 escreva("<hr>");
 
 var Luna = (anoAtual - 1950);
@@ -48,22 +48,22 @@ escreva("Mês de nascimento: Novembro");
 pulaLinha();
 escreva("Ano de nascimento:1950");
 pulaLinha();
-escreva("Faixa Etária:"+ calculoIdade(Luna) + mensagem);
+escreva("Faixa Etária:"+ calculoIdade(Luna));
 escreva("<hr>");
 
 escreva("<strong> .:: Alura LEVEL UP ::. </strong>");
 
 function calculoIdade (idade){
     if (idade <= 17){ 
-        mensagem=("ADOLESCENTE");
+        return "ADOLESCENTE"
     } if (idade >= 18 && idade <=29){
-        mensagem = ("JOVEM");
+         return "JOVEM"
     }
      if (idade >=30 && idade <=59){
-        mensagem = ("ADULTO");
+        return "ADULTO"
       }
      if (idade >=60){
-            mensagem=("IDOSO")
+            return "IDOSO"
     }
 }
 
